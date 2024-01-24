@@ -70,7 +70,7 @@ void bitonic_seq(int *array, size_t size, size_t begin, size_t sq, char run)
 		print_array(array + begin, sq);
 
 		bitonic_seq(array, size, begin, t, UP);
-		bitonic_seq(array, size,begin + t, t, DOWN);
+		bitonic_seq(array, size, begin + t, t, DOWN);
 		bitonic_merge(array, size, begin, sq, run);
 
 		printf("Result [%lu/%lu] (%s):\n", sq, size, str);
